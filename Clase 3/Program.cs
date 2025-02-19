@@ -19,7 +19,9 @@ class Program {
         var arbol = analisiSintactico.inicio();
         
         Visitor visitor = new Visitor();
+
         visitor.Visit(arbol);
+        Console.WriteLine(arbol.ToStringTree());
         Console.WriteLine("-----------------------------------------");
         foreach (var consola in visitor.listaSalida) {
             Console.WriteLine(consola);
