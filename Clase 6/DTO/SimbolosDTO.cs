@@ -6,10 +6,13 @@ public class SimbolosDTO {
 
     public Dictionary<string, Object>? valorStruct;
 
-    public SimbolosDTO(string identificador, string tipo, Object valor) {
+    public string valorXArm64;
+
+    public SimbolosDTO(string identificador, string tipo, Object valor, valorXArm64) {
         this.identificador = identificador;
         this.tipo = tipo;
         this.valor = valor;
+        this.valorXArm64 = valorXArm64;
     }
 
     public SimbolosDTO(string identificador, string tipo, Dictionary<string, Object> valorStruct) {
